@@ -474,11 +474,21 @@ h3.profession
 .about .about-content .skills .skill-item h5,
 .about .about-content .skill .skill-item h5
 {
-    line-height: 40px;
+    line-height: 1.4;
     font-weight: 600;
     font-size: 16px;
     color: var(--text-black-900);
     text-transform: capitalize;
+    margin: 0;
+}
+.about .about-content .skills .skill-item .skill-head,
+.about .about-content .skill .skill-item .skill-head
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 .about .about-content .skills .skill-item .progress,
 .about .about-content .skill .skill-item .progress
@@ -508,13 +518,10 @@ h3.profession
 .about .about-content .skills .skill-item .skill-percent,
 .about .about-content .skill .skill-item .skill-percent 
 {
-    position: absolute;
-    right: 0;
     color: var(--text-black-900);
-    top: -40px;
     font-weight: 400;
-    line-height: 40px;
-    
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 /* Progress bar width classes */
 .progress-in-25 { width: 25%; }
